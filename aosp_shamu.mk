@@ -22,11 +22,13 @@
 
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
+$(call inherit-product, vendor/aosp/common.mk)
+
 
 PRODUCT_NAME := aosp_shamu
 PRODUCT_DEVICE := shamu
-PRODUCT_BRAND := Android
-PRODUCT_MODEL := AOSP on Shamu
+PRODUCT_BRAND := android
+PRODUCT_MODEL := shamu
 PRODUCT_MANUFACTURER := motorola
 #PRODUCT_RESTRICT_VENDOR_FILES := true
 
